@@ -12,7 +12,8 @@ public class Singleton : MonoBehaviour
 {
 	private static Singleton instance = null;
 
-	public GameObject txtResult;
+	public GameObject txtResult, cydSample;
+
 
 	public static Singleton Instance
 	{
@@ -30,6 +31,8 @@ public class Singleton : MonoBehaviour
 	void Awake()
 	{
 		txtResult = GameObject.Find("txtResult");
+		cydSample = GameObject.Find("cydSample");
+
 	}
 
 }
